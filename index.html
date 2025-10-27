@@ -1,116 +1,202 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartPulse AI Technologies</title>
-
-  <!-- Tailwind via CDN مؤقت للتجارب المحلية -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <meta name="description" content="نمنح فكرتك نبض الذكاء. حلول مواقع ذكية، إعلانات مدعومة بالذكاء الاصطناعي، وأنظمة رد آلي لعملائك.">
-</head>
-
-<body class="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#1a0033] to-[#00111f] text-white flex flex-col">
-  <!-- الهيدر -->
-  <header class="w-full border-b border-white/10 bg-white/5 backdrop-blur-md">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between p-4 gap-3">
-      <div class="flex items-center gap-2">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 shadow-lg shadow-fuchsia-700/40"></div>
-        <div class="text-left">
-          <div class="font-semibold leading-tight text-white text-lg">SmartPulse AI</div>
-          <div class="text-[11px] text-white/60 -mt-1">نمنح فكرتك نبض الذكاء</div>
-        </div>
-      </div>
-
-      <nav class="flex items-center gap-4 text-sm text-white/80">
-        <button class="hover:text-white transition">الخدمات</button>
-        <button class="hover:text-white transition">الأسعار</button>
-        <button class="hover:text-white transition">تجربة DocChat</button>
-        <button class="px-3 py-1.5 rounded-xl bg-white text-black text-[13px] font-semibold hover:bg-gray-200 transition">
-          تواصل معنا
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- البطل (Hero Section) -->
-  <main class="flex-1 flex items-center">
-    <section class="w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-8 p-6 md:p-10">
-      
-      <!-- نص -->
-      <div class="flex flex-col justify-center">
-        <h1 class="text-2xl md:text-4xl font-bold leading-[1.3] text-white">
-          نبني حضورك الرقمي من أول نقرة ⚡  
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-indigo-400 to-cyan-300">
-            موقعك • إعلانك • رد تلقائي لعملاءك
-          </span>
-        </h1>
-
-        <p class="text-white/70 text-[15px] md:text-base mt-4 leading-relaxed">
-          SmartPulse AI Technologies شركة متخصصة في بناء مواقع احترافية، حملات تسويق ذكية،
-          وأنظمة رد آلي على الواتساب تخدم عملاءك 24/7 بدون ما ترفع سماعة.
-        </p>
-
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
-          <button class="px-4 py-2 rounded-xl text-sm font-semibold bg-white text-black hover:bg-gray-200 transition shadow-[0_10px_40px_rgba(255,255,255,0.2)]">
-            أرسل نشاطك الآن وخليك أونلاين خلال أيام
-          </button>
-
-          <button class="px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-500 to-fuchsia-500 hover:opacity-90 transition shadow-[0_10px_40px_rgba(168,85,247,0.6)]">
-            جرّب خدمة DocChat 📄🤖
-          </button>
-        </div>
-
-        <div class="text-[12px] text-white/50 mt-4">
-          بدون التزام – استشارة أولية مجانية.
-        </div>
-      </div>
-
-      <!-- كرت الخدمة -->
-      <div class="flex items-center">
-        <div class="relative w-full max-w-sm mx-auto">
-          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-fuchsia-500 via-indigo-500 to-cyan-400 blur-xl opacity-30"></div>
-
-          <div class="relative rounded-2xl bg-white/10 border border-white/20 backdrop-blur-xl p-5 shadow-xl">
-            <div class="text-xs font-medium text-white/60 mb-2">خدمة مميزة</div>
-            <div class="text-lg font-semibold leading-snug text-white">
-              بوت ذكي يرد على عملاءك في الواتساب
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartPulse AI Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="نمنح فكرتك نبض الذكاء — حلول مواقع ذكية، إعلانات مدعومة بالذكاء الاصطناعي، وأنظمة رد آلي تخدم عملاءك 24/7."
+    />
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#0a0a1a] via-[#1a0033] to-[#00111f] text-white flex flex-col font-sans"
+  >
+    <!-- الهيدر -->
+    <header
+      class="w-full fixed top-0 z-50 border-b border-white/10 bg-black/20 backdrop-blur-md"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between p-4 gap-3"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 shadow-lg shadow-fuchsia-700/40"
+          ></div>
+          <div class="text-right">
+            <div class="font-semibold text-lg">SmartPulse AI</div>
+            <div class="text-[11px] text-white/60 -mt-1">
+              نمنح فكرتك نبض الذكاء
             </div>
-            <div class="text-[13px] text-white/70 mt-2 leading-relaxed">
-              يجاوب على الأسئلة، يشرح منتجاتك، وياخذ طلبات مبدئية – بصيغة محترمة بإسم مشروعك.
-            </div>
-            <div class="text-[12px] text-emerald-300 mt-3">
-              أقل من تكلفة موظف استقبال.
-            </div>
-
-            <div class="mt-4 grid grid-cols-2 gap-3 text-[12px] text-white/80">
-              <div class="rounded-lg border border-white/20 bg-white/5 p-2">
-                🕒 متواجد 24/7
-              </div>
-              <div class="rounded-lg border border-white/20 bg-white/5 p-2">
-                💬 لهجتك/أسلوبك
-              </div>
-              <div class="rounded-lg border border-white/20 bg-white/5 p-2 col-span-2">
-                📊 يرسل لك تقرير بالعملاء المهتمين
-              </div>
-            </div>
-
-            <button class="w-full mt-5 text-[13px] font-semibold rounded-xl bg-white text-black py-2 hover:bg-gray-200 transition">
-              أبغى أشوف عيّنة الردود
-            </button>
           </div>
         </div>
+
+        <nav class="flex items-center gap-5 text-sm text-white/80">
+          <button class="hover:text-white transition">الخدمات</button>
+          <button class="hover:text-white transition">الأسعار</button>
+          <button class="hover:text-white transition">DocChat</button>
+          <button
+            class="px-3 py-1.5 rounded-xl bg-white text-black text-[13px] font-semibold hover:bg-gray-200 transition"
+          >
+            ابدأ مشروعك الآن
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <main class="flex-1 flex items-center justify-center mt-20">
+      <section
+        class="w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-10 p-6 md:p-10"
+      >
+        <!-- النص الرئيسي -->
+        <div class="flex flex-col justify-center">
+          <h1
+            class="text-3xl md:text-4xl font-bold leading-[1.4] text-white mb-4"
+          >
+            نربط مشروعك
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-cyan-300"
+              >بالذكاء الاصطناعي</span
+            >
+            من أول لحظة تكلّم عميلك ⚡
+          </h1>
+
+          <p class="text-white/70 text-[15px] leading-relaxed mb-6">
+            موقع إلكتروني احترافي، حملة تسويق ذكية، وبوت واتساب يرد على
+            عملاءك 24/7 باسم نشاطك وبأسلوبك. كل هذا بدون فريق تسويق وبدون موظف
+            استقبال.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <button
+              class="px-5 py-2 rounded-xl text-sm font-semibold bg-white text-black hover:bg-gray-200 transition shadow-md"
+            >
+              ارفع نشاطك وخليك أونلاين 🚀
+            </button>
+            <button
+              class="px-5 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-500 to-fuchsia-500 hover:opacity-90 transition shadow-[0_10px_40px_rgba(168,85,247,0.6)]"
+            >
+              جرّب الرد الآلي 🤖
+            </button>
+          </div>
+
+          <div class="text-[12px] text-emerald-300 mt-3">
+            استشارة أولية مجانية • بدون التزام
+          </div>
+
+          <div class="flex flex-wrap gap-2 mt-4 text-[12px] text-white/70">
+            <div
+              class="rounded-lg border border-white/20 bg-white/5 px-2 py-1"
+            >
+              🕒 متواجد 24/7
+            </div>
+            <div
+              class="rounded-lg border border-white/20 bg-white/5 px-2 py-1"
+            >
+              💬 بلهجتك وأسلوبك
+            </div>
+            <div
+              class="rounded-lg border border-white/20 bg-white/5 px-2 py-1"
+            >
+              📊 يرسل تقارير بالعملاء المهتمين
+            </div>
+          </div>
+        </div>
+
+        <!-- بطاقة الشات -->
+        <div class="flex items-center justify-center">
+          <div class="relative w-full max-w-sm">
+            <div
+              class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-fuchsia-500 via-indigo-500 to-cyan-400 blur-xl opacity-25"
+            ></div>
+
+            <div
+              class="relative rounded-2xl bg-white/10 border border-white/20 backdrop-blur-xl p-5 shadow-xl"
+            >
+              <div class="text-xs font-medium text-white/60 mb-2">
+                محادثة واتساب تجريبية
+              </div>
+              <div
+                class="rounded-xl bg-black/30 border border-white/10 p-3 text-[13px] space-y-2"
+              >
+                <div
+                  class="bg-white/10 rounded-lg p-2 w-fit ml-auto text-white/90"
+                >
+                  السلام عليكم، أسعار تنظيف المكيفات عندكم؟
+                </div>
+                <div
+                  class="bg-gradient-to-r from-fuchsia-600 to-indigo-600 rounded-lg p-2 w-fit mr-auto text-white/90"
+                >
+                  وعليكم السلام 🔧<br />
+                  تنظيف عميق 150 ريال للوحدة<br />
+                  متى تحب نجي؟ اليوم أو بكرة؟
+                </div>
+              </div>
+              <div
+                class="text-[11px] text-emerald-300 mt-3 text-center italic"
+              >
+                تم حفظ بيانات العميل في لوحة المتابعة ✅
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- شريط الثقة -->
+    <div
+      class="w-full border-t border-white/10 bg-black/40 backdrop-blur-sm py-3 text-center text-sm text-white/70"
+    >
+      🛡️ كل محادثة يتم حفظها كعميل محتمل — ما تفقد أي تفاعل بعد اليوم
+    </div>
+
+    <!-- الخدمات -->
+    <section
+      class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 p-8 text-center"
+    >
+      <div
+        class="rounded-2xl bg-white/10 border border-white/10 p-6 backdrop-blur-md hover:bg-white/20 transition"
+      >
+        <div class="text-3xl mb-3">💻</div>
+        <h3 class="font-semibold text-lg mb-2">موقع إلكتروني جاهز</h3>
+        <p class="text-white/70 text-sm mb-3">
+          صفحة أنيقة لهويتك تعرض خدماتك وتفتح قناة تواصل مباشرة.
+        </p>
+        <a href="#" class="text-cyan-300 text-[13px]">اعرف أكثر →</a>
       </div>
 
-    </section>
-  </main>
+      <div
+        class="rounded-2xl bg-white/10 border border-white/10 p-6 backdrop-blur-md hover:bg-white/20 transition"
+      >
+        <div class="text-3xl mb-3">📣</div>
+        <h3 class="font-semibold text-lg mb-2">إعلانات ذكية</h3>
+        <p class="text-white/70 text-sm mb-3">
+          نصمم إعلانك ونصيغ محتواه صوتًا وصورة ليشد الانتباه فورًا.
+        </p>
+        <a href="#" class="text-cyan-300 text-[13px]">اعرف أكثر →</a>
+      </div>
 
-  <!-- الفوتر -->
-  <footer class="border-t border-white/10 bg-black/20 text-center text-[12px] text-white/50 py-6">
-    SmartPulse AI Technologies © 2025
-    <span class="text-white/30 mx-1">|</span>
-    نمنح فكرتك نبض الذكاء
-  </footer>
-</body>
+      <div
+        class="rounded-2xl bg-white/10 border border-white/10 p-6 backdrop-blur-md hover:bg-white/20 transition"
+      >
+        <div class="text-3xl mb-3">🤖</div>
+        <h3 class="font-semibold text-lg mb-2">بوت واتساب ذكي</h3>
+        <p class="text-white/70 text-sm mb-3">
+          يرد على العملاء تلقائيًا ويجمع بياناتهم ويحدثك بالتقارير.
+        </p>
+        <a href="#" class="text-cyan-300 text-[13px]">اعرف أكثر →</a>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer
+      class="border-t border-white/10 bg-black/40 text-center text-[12px] text-white/50 py-6"
+    >
+      SmartPulse AI Technologies © 2025
+      <span class="text-white/30 mx-1">|</span>
+      نمنح فكرتك نبض الذكاء
+    </footer>
+  </body>
 </html>
